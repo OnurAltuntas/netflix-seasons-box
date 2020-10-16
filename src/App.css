@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.canvas{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.bg{
+  margin: auto;
+
+  background-color:rgb(47, 47, 47);
+  border: 1px solid;
+  border-radius:10px;
+  min-width:200px ;
+ 
+
+}
+#name{
+  margin-left: 15px;
+  font-weight: 700;
+}
+.season{
+  margin-left: 15px;
+ cursor: pointer;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.table{
+  margin-top: 5px;
+  overflow: auto;
+  max-height: 500px;
+ cursor: pointer;
+
+}
+
+.line{
+  display: flex;
+}
+
+.column{
+  margin-bottom: 20px;
+}
+.column :hover{
+  transition: 0.8s;
+  background-color: rgb(107, 107, 107);
+  
+}
+.check{
+  margin-right:15px;
+  margin-left: 15px;
+  display: block;
+}
+
+.arrow {
+  display: none;
+  margin:auto;
+  margin-right: 15px;
+ cursor: pointer;
+
+}
+
+.line:hover .arrow {
+  display: block;
+}
+.thumbnail{
+  margin-left: 15px;
+  border-radius: 10px;
+}
+.summary{
+    margin:auto;
+    margin-left: 15px;
+    font-size: 18px;
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .bg{
+    width: 200px ;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .bg{
+    width: 250px ;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .bg{
+    width: 300px ;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .bg{
+    width: 350px ;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .bg{
+    width: 600px ;
   }
 }
