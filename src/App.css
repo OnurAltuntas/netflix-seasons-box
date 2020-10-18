@@ -2,6 +2,7 @@
 .canvas{
   display: flex;
   min-height: 100vh;
+
 }
 
 .bg{
@@ -10,18 +11,42 @@
   background-color:rgb(47, 47, 47);
   border: 1px solid;
   border-radius:10px;
-  min-width:200px ;
- 
+  min-width:600px ;
+  min-height: 600px;
 
+  
 }
+
+@keyframes slideMeRight{
+  0%{
+    transform: skewX(53deg) translateX(-500px);
+  }
+  100%{
+    transform: skew(0deg);
+  }
+}
+
 #name{
   margin-left: 15px;
   font-weight: 700;
+  animation: slideMeRight .15s ease-in;
+
+}
+.season_box{
+  display: flex;
 }
 .season{
   margin-left: 15px;
- cursor: pointer;
-
+  cursor: pointer;
+  animation: slideMeRight .15s ease-in;
+}
+.progressbar{
+  background-color: red;
+  min-width: 30% ;
+  min-height:2px;
+  color:red;
+  margin: 0 auto auto auto;
+  margin-right: 15px;
 }
 
 .table{
@@ -34,15 +59,16 @@
 
 .line{
   display: flex;
+
 }
 
 .column{
   margin-bottom: 20px;
+  animation: slideMeRight .15s ease-in;
 }
 .column :hover{
   transition: 0.8s;
   background-color: rgb(107, 107, 107);
-  
 }
 .check{
   margin-right:15px;
@@ -54,7 +80,7 @@
   display: none;
   margin:auto;
   margin-right: 15px;
- cursor: pointer;
+  cursor: pointer;
 
 }
 
